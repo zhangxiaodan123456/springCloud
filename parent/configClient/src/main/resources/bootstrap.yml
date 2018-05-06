@@ -1,0 +1,10 @@
+server:
+  port: 7078
+spring:
+  application:
+    name: configclient
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://localhost:7077

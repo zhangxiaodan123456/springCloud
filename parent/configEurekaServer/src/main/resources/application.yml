@@ -1,0 +1,21 @@
+server:
+  port: 7079
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zhangxiaodan123456/zxd/
+          search-paths: zxd
+          username: zhangxiaodan123456
+          password: zhangxiaodan654321
+          
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7071/eureka/
+      
+

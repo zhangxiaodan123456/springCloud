@@ -1,0 +1,15 @@
+server:
+  port: 7077
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zhangxiaodan123456/zxd/
+          search-paths: zxd
+          username: zhangxiaodan123456
+          password: zhangxiaodan654321
+
