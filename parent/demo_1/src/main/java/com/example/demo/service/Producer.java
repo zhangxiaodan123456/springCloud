@@ -14,11 +14,11 @@ public class Producer {
 	        //创建连接工厂
 	        ConnectionFactory factory = new ConnectionFactory();
 	        //设置RabbitMQ相关信息
-	        factory.setHost("192.168.95.130");
-	         factory.setUsername("zxd2");
-	         //factory.setPassword("guest");
+	        factory.setHost("192.168.79.128");
+	         factory.setUsername("carlche");
+	         factory.setPassword("carlche");
 	         factory.setPort(5672);
-	        //创建一个新的连接
+	        //创建一个新的连接 
 	        Connection connection = factory.newConnection();
 	        //创建一个通道
 	        Channel channel = connection.createChannel();
@@ -30,5 +30,6 @@ public class Producer {
 	        //关闭通道和连接
 	        channel.close();
 	        connection.close();
+	        //System.in.read();
 	    }
 }
