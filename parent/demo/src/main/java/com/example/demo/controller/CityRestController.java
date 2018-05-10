@@ -20,7 +20,7 @@ import com.example.demo.service.impl.RedisService;
 /**
  * Created by bysocket on 07/02/2017.
  */
-
+ 
 @RestController
 @RequestMapping("/city")
 public class CityRestController {
@@ -30,13 +30,14 @@ public class CityRestController {
     private RedisService redisService;
     @Autowired
     private LoginInfoService loginInfoService;
-    
-    @RequestMapping("/redis")
-    public String redis() {
-    	 redisService.setValue("dan", "yqr");
-    	 return (String) redisService.getValue("haha");
-    }
-    
+
+    @RequestMapping("/haha")
+    public String haha(ModelAndView m) {
+    	redisService.setValue("dan", "yqr");
+    	//redisService.setValue("dan", "yqr");
+    	 return (String) redisService.getValue("zhang");
+    }  
+
     @RequestMapping("/list")
     public ModelAndView list(ModelAndView m) {
     	 redisService.setValue("dan", "yqr");
