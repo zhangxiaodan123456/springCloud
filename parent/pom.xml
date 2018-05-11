@@ -23,7 +23,7 @@
 	  <module>springribbon</module>
 	  <module>springZuul</module>
 	  <module>zipkinServer</module>
-    </modules>
+    </modules> 
 	
     <parent>
 		<groupId>org.springframework.boot</groupId>

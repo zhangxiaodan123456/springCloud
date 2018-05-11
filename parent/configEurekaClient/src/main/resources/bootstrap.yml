@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: configclient
+    index: 2
   cloud:
     config:
       label: master
@@ -10,14 +11,20 @@ spring:
       discovery:
         service-id: configserver
         enabled: true
+    bus:
+      trace:
+        enabled: true
   rabbitmq:
-    host: 192.168.95.131
+    host: 192.168.79.128
     port: 5672
-    username: test
-    password: test
+    username: carlche
+    password: carlche 
     
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7071/eureka/
 
+management:
+  security:
+    enabled: false 
