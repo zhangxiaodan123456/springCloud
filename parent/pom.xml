@@ -11,6 +11,7 @@
     <modules>
       <module>configClient</module>
 	  <module>configEurekaClient</module>
+	  <module>configEurekaClient1</module>
 	  <module>configEurekaServer</module>
 	  <module>configEurekaServer2</module>
 	  <module>configServer</module>
