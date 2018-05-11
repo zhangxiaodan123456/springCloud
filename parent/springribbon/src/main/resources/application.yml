@@ -1,11 +1,9 @@
 server:
   port: 7074
 eureka:
-  instance:
-    hostname: localhost
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:7071/eureka/
+      defaultZone: http://192.168.79.129:7068/eureka/
 
 spring:
   application:

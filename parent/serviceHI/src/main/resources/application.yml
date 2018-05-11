@@ -1,11 +1,9 @@
 server:
   port: 7072
 eureka:
-  instance:
-    hostname: localhost
   client:
     service-url:
-      defaultZone: http://peer1:7070/eureka/
+      defaultZone: http://192.168.79.128:7068/eureka/,http://192.168.79.129:7068/eureka/
 spring:
   application:
     name: serviceHI
