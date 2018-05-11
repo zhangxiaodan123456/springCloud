@@ -1,9 +1,8 @@
 server:
-  port: 7080
+  port: 7081
 spring:
   application:
     name: configclient
-    index: 2
   cloud:
     config:
       label: master
@@ -12,10 +11,10 @@ spring:
         service-id: configserver
         enabled: true
   rabbitmq:
-    host: 192.168.79.128
+    host: 192.168.95.131
     port: 5672
-    username: carlche
-    password: carlche 
+    username: test
+    password: test
     
 eureka:
   client:
@@ -24,4 +23,4 @@ eureka:
 
 management:
   security:
-    enabled: false 
+    enabled: false

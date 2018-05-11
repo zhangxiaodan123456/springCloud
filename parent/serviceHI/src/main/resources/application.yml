@@ -5,8 +5,7 @@ eureka:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:7071/eureka/
-      
+      defaultZone: http://peer1:7070/eureka/
 spring:
   application:
     name: serviceHI

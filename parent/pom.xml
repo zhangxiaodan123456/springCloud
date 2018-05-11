@@ -11,6 +11,7 @@
     <modules>
       <module>configClient</module>
 	  <module>configEurekaClient</module>
+	  <module>configEurekaClient1</module>
 	  <module>configEurekaServer</module>
 	  <module>configEurekaServer2</module>
 	  <module>configServer</module>
@@ -23,9 +24,12 @@
 	  <module>springribbon</module>
 	  <module>springZuul</module>
 	  <module>zipkinServer</module>
-    </modules> 
+	  <module>zipkinClient</module>
+	  <module>zipkinClient1</module>
+	  <module>EurekaConfig</module>
+    </modules>
 	
-    <parent>
+    <parent> 
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.10.RELEASE</version>
@@ -57,7 +61,7 @@
 			<optional>true</optional>
 			<scope>true</scope>
 		</dependency>
-	</dependencies>
+	</dependencies> 
 
 	<build>
 		<plugins>
