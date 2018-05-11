@@ -31,9 +31,10 @@ public class CityRestController {
     @Autowired
     private LoginInfoService loginInfoService;
 
-    @RequestMapping("/test1")
-    public String test(ModelAndView m) {
-    	 redisService.setValue("dan", "yqr");
+    @RequestMapping("/haha")
+    public String haha(ModelAndView m) {
+    	redisService.setValue("dan", "yqr");
+    	//redisService.setValue("dan", "yqr");
     	 return (String) redisService.getValue("zhang");
     }  
 
