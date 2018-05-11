@@ -18,7 +18,7 @@ public class Producer {
 	         factory.setUsername("test");
 	         factory.setPassword("test");
 	         factory.setPort(5672);
-	        //创建一个新的连接
+	        //创建一个新的连接 
 	        Connection connection = factory.newConnection();
 	        //创建一个通道
 	        Channel channel = connection.createChannel();
@@ -30,5 +30,6 @@ public class Producer {
 	        //关闭通道和连接
 	        channel.close();
 	        connection.close();
+	        //System.in.read();
 	    }
 }
