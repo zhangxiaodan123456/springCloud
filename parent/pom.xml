@@ -24,6 +24,9 @@
 	  <module>springribbon</module>
 	  <module>springZuul</module>
 	  <module>zipkinServer</module>
+	  <module>zipkinClient</module>
+	  <module>zipkinClient1</module>
+	  <module>EurekaConfig</module>
     </modules>
 	
     <parent>
