@@ -27,6 +27,8 @@
 	  <module>zipkinClient</module>
 	  <module>zipkinClient1</module>
 	  <module>EurekaConfig</module>
+	  <module>springHystrix</module>
+	  <module>consul-miya</module>
     </modules>
 	
     <parent> 
