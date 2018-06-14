@@ -16,11 +16,8 @@
 		 }
 
 	 });
-	 
-	 function  getMessage(jsonp){
-		 alert("message:"+jsonp);
-	 }
  }
+ 
  </script>
  <script src="../static/js/jquery.min.js"></script>
  <body>

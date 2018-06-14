@@ -9,30 +9,4 @@
   </resultMap>
   
   
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from LoginInfo
-    where id = #{id}
-  </delete>
-  <insert id="insert"  parameterType="LoginInfo">
-    insert into LoginInfo (id,username, password, state
-      )
-    values (#{id},#{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{state,jdbcType=TINYINT}
-      )
-  </insert>
-  <update id="updateByPrimaryKey" parameterType="LoginInfo">
-    update LoginInfo
-    set username = #{username,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR},
-      state = #{state,jdbcType=TINYINT}
-    where id = #{id,jdbcType=BIGINT}
-  </update>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select id, username, password, state
-    from LoginInfo
-    where id = #{id,jdbcType=BIGINT}
-  </select>
-  <select id="selectAll" resultMap="BaseResultMap">
-    select id, username, password, state
-    from LoginInfo
-  </select>
 </mapper>

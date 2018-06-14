@@ -24,6 +24,7 @@ import com.example.demo.service.impl.RedisService;
 @RestController
 @RequestMapping("/city")
 public class CityRestController {
+	
     @Autowired
     private CityService cityService;
     @Autowired
